@@ -1,0 +1,18 @@
+extends layout
+
+block content
+  h1 \UploadTemp
+
+  h2 Subir arquivos
+  form(action='/upload', method='POST', enctype='multipart/form-data')
+    input(type='file', name='files', multiple=true, required=true)
+    input(type='submit', value='Enviar')
+
+  h2 Arquivos
+  p.right Total: #{files && files.length ? files.length : 'Sem arquivos'}
+  each file, index in files
+    p
+      span= `${index}. `
+      a(href=`/files/${file}`)= file
+
+  

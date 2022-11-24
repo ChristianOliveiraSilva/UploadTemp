@@ -1,0 +1,31 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+
+form {
+  background-color: #efefef;
+  padding: 2rem 2rem .5rem;
+  margin-bottom: 3rem;
+}
+
+[type=submit] {
+  margin: 12px;
+  padding: 12px;
+  display: block;
+  background-color: rgb(98, 98, 216);
+  border: 0;
+  color: white;
+  font-weight: bold;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+a {
+  color: rgb(98, 98, 216);
+}
+
+.right {
+  float: right;
+}
